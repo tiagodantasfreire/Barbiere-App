@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
+    <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+    <title>Barbiere App - Cadastro</title>
+</head>
+<body>
+    <div class="top-bar">
+        <p>BARBIERE APP</p>
+    </div>
+
+    <div class="form">
+        <h1>Faça seu cadastro</h1>
+
+        <p class="sexo">Selecione seu sexo</p>
+        <div class="genero">
+            
+            <input type="radio" name="genero" id="masc">
+            <label for="masc" class="masc-label">
+                <i class="fas fa-mars"></i>
+            </label>
+
+            <input type="radio" name="genero" id="fem">
+            <label for="fem" class="fem-label">
+                <i class="fas fa-venus"></i>
+            </label>
+        </div>
+
+        <div class="campos">
+            <input type="text" name="nome" id="txtNome" placeholder="Nome">
+            <input type="email" name="email" id="txtEmail" placeholder="E-mail">
+            <input type="number" name="tel" id="txtTel" placeholder="Telefone">
+            <input type="password" name="senha" id="txtSenha" placeholder="Senha">
+            <button id="mostrarSenha" onclick="mostrarSenha()">Mostrar senha</button>
+
+            <div class="button" id="btnCadastrar">
+                <a href="./index.html">Cadastrar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
