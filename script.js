@@ -9,3 +9,15 @@ function mostrarSenha(){
         document.getElementById('mostrarSenha').innerHTML = 'Mostrar senha';
     }
 }
+
+function agendarHorario(){
+    
+    if (document.getElementById('agendar').style.visibility == "hidden") {
+        document.getElementById('agendar').style.visibility = "visible"
+        document.getElementById('barbearia').style.height = '180px';
+
+    } else {
+        document.getElementById('agendar').style.visibility = "hidden"
+        document.getElementById('barbearia').style.height = '120px';
+    }
+}

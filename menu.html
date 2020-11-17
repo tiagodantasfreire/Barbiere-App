@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
     <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 
     <title>Menu Principal</title>
 </head>
@@ -19,7 +20,7 @@
         <h1>BARBEARIAS MAIS PRÓXIMAS</h1>
     </div>
 
-    <div class="barbearia">
+    <div class="barbearia" id="barbearia" onclick="agendarHorario()">
         <div class="barbearia-foto">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSH95B6TEJhS7rpb8FHQ7x6l-0UuDKvjjdG7w&usqp=CAU" alt="barbearia x">
         </div>
@@ -32,12 +33,18 @@
                 Ter - Sáb | 10h - 20h
             </p>
         </div>
+
+        <div class="btnAgendar" id="agendar">
+            <a href="">Agendar Horário</a>
+        </div>
     </div>
+
+    
 
     <nav>
         <ul>
-            <li><a href=""><i class="fas fa-home"></i></a></li>
-            <li><a href=""><i class="fas fa-search"></i></a></i></li>
+            <li><a href="./menu.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="./pesquisa.html"><i class="fas fa-search"></i></a></i></li>
             <li><a href=""><i class="fas fa-user"></i></a></li>
         </ul>
     </nav>
