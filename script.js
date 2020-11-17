@@ -21,3 +21,7 @@ function agendarHorario(){
         document.getElementById('barbearia').style.height = '120px';
     }
 }
+
+function labelSenha(){
+    document.getElementById('mostrarSenha').style.visibility = "visible";
+}
