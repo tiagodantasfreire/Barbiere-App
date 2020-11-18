@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
+    <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Agendar Horário</title>
+</head>
+<body>
+    <div class="top-bar">
+        <p>BARBIERE APP</p>
+    </div>
+
+    <div class="agendarForm">
+        <h1>Agende seu horário</h1>
+            <div class="agendarData">
+                <label for="data" class="labeldate" required>Selecione o Dia:</label>
+                <input type="date" name="txtDate" id="data">
+            </div>
+            
+            <div class="selectServico">
+                <label for="selServicos" class="labelSelect">Selecione o serviço:</label>
+                <select name="txtServicos" id="selServicos" required>
+                    <option value="cabelo">Cabelo - R$25</option>
+                     <option value="barba">Barba - R$10</option>
+                    <option value="sombrancelha">Sombrancelha - R$5</option>
+                </select>
+        </div>
+        
+    
+
+
+        <div class="button" id="marcarHorario">
+            <a href="./menu.html">Marcar horário</a>
+        </div>
+
+    </div>
+
+
+    <nav>
+        <ul>
+            <li><a href="./menu.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="./pesquisa.html"><i class="fas fa-search"></i></a></li>
+            <li><a href="./usuario.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

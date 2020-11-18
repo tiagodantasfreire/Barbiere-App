@@ -7,6 +7,8 @@
     <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
     <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
     <script src="./script.js" defer></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 
     <title>Pesquisa</title>
 </head>
@@ -16,20 +18,20 @@
     </div>
 
     <div class="pesquisa">
-        <span id="ico">
+        <span id="ico" onclick="mostrarBarberariaNome()">
             <i class="fas fa-search"></i>
         </span>
         <input type="text" name="txtPesquisa" id="pesquisa" placeholder="Pesquise">
     </div>
 
-    <div class="resultado-pesquisa">
+    <div class="resultado-pesquisa" id="resultado-pesquisa">
         <!-- Colocar o resultado da pesquisa aqui -->
     </div>
 
     <nav>
         <ul>
             <li><a href="./menu.html"><i class="fas fa-home"></i></a></li>
-            <li><a href="./pesquisa.html"><i class="fas fa-search"></i></a></i></li>
+            <li><a href="./pesquisa.html"><i class="fas fa-search"></i></a></li>
             <li><a href="./usuario.html"><i class="fas fa-user"></i></a></li>
         </ul>
     </nav>

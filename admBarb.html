@@ -1,0 +1,51 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
+    <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <title>Administrador - Usuário</title>
+</head>
+<body onload="mostrarBarbeariasAdm()">
+    <div class="top-bar">
+        <p>BARBIERE APP</p>
+    </div>
+    
+    <form class="admForm">
+        <h1>CRUD Barbearia</h1>
+        <p>
+            Nome:<br>
+            <input type="text" id="nome"/>
+        </p>
+        <p>
+            Endereço:<br>
+            <input type="text" id="endereco"/>
+        </p>
+        <p>
+            Horário:<br>
+            <input type="text" id="horario"/>
+        </p>
+        <p>
+            Imagem:<br>
+            <input type="text" id="imagem"/>
+        </p>
+        <p>
+            <button onclick="adicionarBarbearia()" id="botao">Cadastrar</button>
+        </p>
+    </form>
+
+    <div class="buscar">
+        <p>
+            Buscar por nome <br>
+            <input type="text" id="buscarBarbearia"/>
+        </p>
+        <button class="btnBuscar" onclick="mostrarBarbeariaNomeAdm()" id="botaoBarbearia">Buscar</button>
+    </div>
+    <div id="resultado-adm"></div>
+    <div id="barbearia-adm"></div>
+</body>
+</html>

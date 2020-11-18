@@ -47,15 +47,19 @@ body{
     font-size: 25px;
 
     height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login input{
     width: 320px;
     height: 50px;
     border-radius: 10px;
+    margin: 5px;
     
     font-size: 20px;
-    margin: 5px;
 }
 
 .login input::placeholder{
@@ -72,10 +76,8 @@ body{
     border-radius: 10px;
     background-color: var(--mainColor);
 
-    position: relative;
-    left: 25px;
-
-    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
     display: flex;
     align-items: center;
@@ -94,8 +96,8 @@ body{
 }
 
 #btnEntrar{
-    position: relative;
-    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .redesSociais{
@@ -171,6 +173,17 @@ body{
     color: #f0f0f0;
 }
 
+.adm{
+    color: white;
+    font-size: 20px;
+
+    margin: 15px;
+}
+
+.adm a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -211,14 +224,18 @@ body{
 .genero{
     font-size: 50px;
     display: flex;
-}
+    flex-direction: row;
+    align-items: center;
+    
+    margin-right: auto;
+    margin-left: auto;
 
-.genero p{
-    font-size: 20px;
+    max-width: 320px;
 }
 
 input[type="radio"]{
     -webkit-appearance: none;
+    
 }
 
 label{
@@ -227,8 +244,9 @@ label{
     border-radius: 10px;
 
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 
     width: 70px;
     height: 70px;
@@ -378,6 +396,23 @@ input#fem[type="radio"]:checked + label{
     transition: .3s;
 }
 
+.barbearia-info{
+    margin-top: 30px;
+}
+
+.barbearia-info span{
+    position: relative;
+    left: 195px;
+    top: 45px;
+
+    color: red;
+    font-size: 18px;
+}
+
+.fa-edit {
+    color: white;
+}
+
 .barbearia a{
     color: white;
     text-decoration: none;
@@ -401,7 +436,7 @@ input#fem[type="radio"]:checked + label{
 .barbearia-info{
     position: relative;
     left: 110px;
-    bottom: 122px;
+    bottom: 160px;
 
     width: 220px;
 
@@ -451,11 +486,10 @@ nav ul li a {
     height: 40px;
     border-radius: 10px;
     background-color: var(--mainColor);
-    margin-left: auto;
-    margin-right: auto;
 
     position: relative;
-    bottom: 100px;
+    right: 105px;
+    top: 20px;
 
     margin-top: 15px;
 
@@ -541,9 +575,11 @@ nav ul li a {
 .user-info{
     margin-top: 130px;
     font-size: 90px;
-    margin-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
+    justify-content: center;
 }
 
 .user-name{
@@ -568,8 +604,17 @@ nav ul li a {
 }
 
 .proximos-horarios{
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: auto;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximos-horarios h2{
+    margin-right: 80px;
 }
 
 .horarios{
@@ -615,7 +660,7 @@ nav ul li a {
 
 .sair{
     position: relative;
-    top: 290px;
+    top: 20px;
 
     text-align: right;
     margin-right: 30px;
@@ -625,4 +670,197 @@ nav ul li a {
     color: red;
     text-decoration: none;
     font-size: 30px;
+}
+
+
+
+
+
+
+
+/* Agendar */
+.agendarForm{
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right:auto;
+
+    width:80%;
+    text-align: center;
+}
+
+.agendarForm h1{
+    text-align: center;
+}
+
+.labeldate{
+    width: fit-content;
+}
+
+input#data{
+    margin-top: 15px;
+    width: 175px;
+    height: 30px;
+
+    border-radius: 15px;
+
+    background-color: var(--bgColor);
+    color: white;
+}
+
+.labelSelect{
+    width: fit-content;
+}
+
+#selServicos{
+    color: white;
+    background-color: var(--bgColor);
+
+    height: 30px;
+    width: 180px;
+
+    border-radius: 10px;
+}
+
+#marcarHorario{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+/* Adm */
+.admForm{
+    margin-top: 110px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 18px;
+
+    width: 250px;
+}
+
+.admForm h1{
+    font-size: 26px;
+    text-align: center;
+}
+
+.admForm input{
+    width: 250px;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--mainColor);
+
+    color: white;
+    font-size: 17px;
+}
+
+.buscar{
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 50px;
+
+    width: 250px;
+}
+
+.buscar input{
+    width: 250px;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--mainColor);
+
+    color: white;
+    font-size: 17px;
+}
+
+#botao{
+    width: 250px;
+    height: 40px;
+    background-color: var(--mainColor);
+
+    border: none;
+    color: white;
+    font-family: mainFont;
+    font-size: 18px;
+
+    border-radius: 10px;
+}
+
+.btnBuscar{
+    width: 250px;
+    height: 40px;
+    background-color: var(--mainColor);
+
+    border: none;
+    color: white;
+    font-family: mainFont;
+    font-size: 18px;
+
+    border-radius: 10px;
+}
+
+
+
+.del-edit{
+    position: relative;
+    left:150px;
+    bottom: 90px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+}
+
+.del-edit button{
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btnDeletar{
+    background-color: red;
+    color: white;
+}
+
+
+.cliente{
+    width: 330px;
+    height: 120px;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 13px;
+
+}
+
+.cliente-info{
+    position: relative;
+    margin-left: 20px;
+    bottom: 20px;
+}
+
+.del-edit-user{
+    position: relative;
+    left:210px;
+    bottom: 90px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+}
+
+.del-edit-user button{
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 400px){
+
 }

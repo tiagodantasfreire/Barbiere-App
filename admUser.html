@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
+    <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Administrador - Usuário</title>
+</head>
+<body onload="mostrarClientesAdm()">
+    <div class="top-bar">
+        <p>BARBIERE APP</p>
+    </div>
+    
+    <form class="admForm">
+        <h1>CRUD Usuário</h1>
+        <p>
+            Nome:<br>
+            <input type="text" id="nome"/>
+        </p>
+        <p>
+            Email:<br>
+            <input type="text" id="email"/>
+        </p>
+        <p>
+            Telefone:<br>
+            <input type="text" id="telefone"/>
+        </p>
+        <p>
+            Senha:<br>
+            <input type="text" id="senha"/>
+        </p>
+        <p>
+            <button onclick="adicionarClienteAdm()" id="botao">Cadastrar</button>
+        </p>
+    </form>
+
+    <div class="buscar">
+        <p>
+            Buscar Cliente por Email<br>  
+            <input type="text" id="buscarCliente"/>
+        </p>
+        <button class="btnBuscar" onClick="mostrarClienteEmailAdm()" id="botaoCliente">Buscar</button>
+    </div>
+
+    <br>
+    <div id="resultado-email"></div>
+    <div id="resultado-cliente"></div>
+</body>
+</html>

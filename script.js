@@ -10,11 +10,12 @@ function mostrarSenha(){
     }
 }
 
+
 function agendarHorario(){
     
     if (document.getElementById('agendar').style.visibility == "hidden") {
         document.getElementById('agendar').style.visibility = "visible"
-        document.getElementById('barbearia').style.height = '180px';
+        document.getElementById('barbearia').style.height = '170px';
 
     } else {
         document.getElementById('agendar').style.visibility = "hidden"

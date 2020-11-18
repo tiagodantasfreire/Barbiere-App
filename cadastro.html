@@ -8,6 +8,8 @@
     <link rel="icon" href="./logos/B-verde-preto.png" type="imagem/png">
     <script src="https://kit.fontawesome.com/80d4c882f5.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 
     <title>Barbiere App - Cadastro</title>
 </head>
@@ -40,7 +42,7 @@
             <input type="password" name="senha" id="txtSenha" placeholder="Senha" onclick="labelSenha()">
             <button id="mostrarSenha" onclick="mostrarSenha()">Mostrar senha</button>
 
-            <div class="button" id="btnCadastrar">
+            <div class="button" id="btnCadastrar" onclick="adicionarCliente()">
                 <a href="./index.html">Cadastrar</a>
             </div>
         </div>
